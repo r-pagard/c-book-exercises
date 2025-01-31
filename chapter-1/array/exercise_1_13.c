@@ -18,8 +18,13 @@ int main() {
 		if(character >= 'A' && character <= 'Y') ++letters_number[character - 'A'];
 	}
 
-	printf("Letters: ");
-	for(int i = 0; i < 26; ++i) printf("%d ", letters_number[i]);	// print letters_number indexes
+	for(int i = 0; i < 26; ++i) {
+		if(letters_number[i] > 0) {	// only letters that appeared in the input
+			printf("[%c]: ", 'a' + i);	// convert index to character
+			for(int j = 0; j < letters_number[i]; ++j) printf("*");
+			printf("\n");
+		}
+	}
 	printf("\n");
 
 	return 0;
