@@ -18,6 +18,11 @@ int main() {
 	celsius = temperature_conversion(fahrenheit);
 	printf("Fahrenheit(F): %d, Celsius(C): %d\n", fahrenheit, celsius);
 
+
+	/*	Exercise explanation: Rewrite the temperature conversion program of Section 1.2
+	 *	to use a function for conversion.
+	*/
+
     return 0;
 }
 
