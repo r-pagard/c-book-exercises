@@ -28,7 +28,7 @@ int main() {
 			// when we're outside a word, it means we've passed a word, and in this case, we increment the word number
 		}
 	}
-	
+
 	printf("Number Of Lines: %d\tNumber Of Words: %d\tNumber Of Characters: %d\n", line_number, word_number, character_number);
 
 	return 0;
