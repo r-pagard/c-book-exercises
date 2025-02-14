@@ -14,7 +14,7 @@ int main() {
 
     while( (len = getLine(line, MAXLINE)) > 0) {
         reverseLine(result, line);
-        printf("%s\n", result);   // only print non-empty lines
+        printf("%s\n", result);
     }
 
 
@@ -57,6 +57,9 @@ void reverseLine(char to[], char from[]) {
     // check if there's a new line at the end, then ignore it while reversing
     int has_new_line = (from[end] == '\n') ? 1 : 0;
     if(has_new_line) end--;
+
+    // reset `to` array to avoid leftover, clear it before each use
+    for(int i = 0; i < MAXLINE; i++) to[i] = '\0';
 
     while(first < end) {
         char temp = from[first];    // store the first character of the string
