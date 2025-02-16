@@ -16,7 +16,7 @@ This repository is a collection of exercises from C programming books that I'm s
 **Chapter 1**
 - [File Copying](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/file-copying)
 - [Counting](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/counting)
-- [Arrays](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/array)s
+- [Arrays](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/array)
 - [Functions](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/function)
 - [Character Arrays](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/character-arrays)
 
