@@ -1,17 +1,28 @@
-# C Book Exercises
+### **C Book Exercises**
 
 This repository is a collection of exercises from C programming books that I'm solving just for fun and learning. It's a way for me to practice and get better at C programming.
 
 ---
 
-## What's Inside
+### **What's Inside**
 
 - Solutions to various exercises from C books.  
 - Each file is named based on the chapter or exercise number.
 
 ---
 
-## How to Run
+### **Chpaters**
+
+**Chapter 1**
+- [File Copying](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/file-copying)
+- [Counting](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/counting)
+- [Arrays](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/array)s
+- [Functions](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/function)
+- [Character Arrays](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/character-arrays)
+
+---
+
+### **How to Run**
 
 1. Clone the repository:
    ```bash
@@ -25,7 +36,7 @@ This repository is a collection of exercises from C programming books that I'm s
 
 ---
 
-## Tools
+### **Tools**
 
 - **OS**: Linux  
 - **Compiler**: GCC  
@@ -33,6 +44,6 @@ This repository is a collection of exercises from C programming books that I'm s
 ---
 
 Feel free to take a look around or use the code if it's helpful.  
-It's nothing fancy—just me having fun with C. :)
+It's nothing fancy—just me having fun with C.
 
 ---
