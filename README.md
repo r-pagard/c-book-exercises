@@ -19,6 +19,7 @@ This repository is a collection of exercises from C programming books that I'm s
 - [Arrays](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/array)
 - [Functions](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/function)
 - [Character Arrays](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/character-arrays)
+- [External Variable And Scope](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/external-variables-scope)
 
 ---
 
