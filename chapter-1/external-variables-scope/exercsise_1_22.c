@@ -24,15 +24,16 @@ int main() {
 
 void fold(void) {
     int character;
-    int position;   // tracks the current column position in the line
-
+    int position = 0;   // tracks the current column position in the line
     char character_group[MAXCHAR];  // buffer to store the input ine (up to MAXCHAR)
 
-    // through on the line until the newline
-    while(character != '\n')
+    while( (character = getchar()) != EOF ) // through on the line until the newline and read first character
     {
-        // read characters one by one and stores them in the array
-        for(position = 0; position < LIMIT && (character = getchar()) != EOF; ++position) character_group[position] = character;
+        // read characters into `character_group` until LIMIT or newline
+        do {
+            character_group[position] = character;
+            ++position;
+        } while(position < LIMIT && (character = getchar()) != EOF && character != '\n');
 
         // if the last character is a newline, store it and increment position
         if(character == '\n') {
