@@ -23,10 +23,13 @@ int main() {
 
 void comment_remover(void) {
 	int character;
-	int position = 0;
+	int position, buffer_length;
+
 	char lines[MAXLINECHAR];
 	char temp[MAXTEMPLEN];
 
+	position = 0;
+	buffer_length = 0;
 	while( (character = getchar()) != EOF )
 	{
 		// Read characters into `lines` until newline and EOF
@@ -34,6 +37,7 @@ void comment_remover(void) {
 			// Store characters in the array and increment position
 			lines[position] = character;
 			position++;
+			buffer_length++;
 		}
 		while( character != '\n' && (character = getchar()) != EOF );
 
@@ -45,7 +49,24 @@ void comment_remover(void) {
 		lines[position] = '\0';	// Null-terminate the string
 	}
 
-	// print the buffer content
-	printf("\nThe Buffer: \n");
-	printf("\n%s\n", lines);
+	// Proces the buffer to remove comments
+	int i = 0, j = 0;
+	while(lines[i] != '\0')
+	{
+		if(lines[i] == '/' && lines[i + 1] == '/') {
+			// Skip the rest of the line
+			while(lines[i] != '\n' && lines[i] != '\0') i++;
+		} else {
+			// Copy the character to the temp buffer
+			temp[j] = lines[i];
+			j++;
+		}
+
+		if(lines[i] != '\0') i++;
+	}
+	temp[j] = '\0'; // Null-terminate the temp buffer
+
+	// Print the processed buffer content
+    printf("\nThe Buffer without comments: \n");
+    printf("\n%s\n", temp);
 }
