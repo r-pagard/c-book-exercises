@@ -54,9 +54,16 @@ void comment_remover(void) {
 	while(lines[i] != '\0')
 	{
 		if(lines[i] == '/' && lines[i + 1] == '/') {
-			// Skip the rest of the line
+			// Skip the rest of the line for single-line comments
 			while(lines[i] != '\n' && lines[i] != '\0') i++;
-		} else {
+		}
+		else if( (lines[i] == '/' && lines[i + 1] == '*') || (lines[i] == '*')) {
+			// Skip the multi-line comments
+			i += 2;	// Skip the initial: /*
+			while(lines[i] != '\0' && !(lines[i] == '*' && lines[i + 1] == '/')) i++;
+			if(lines[i] != '\0') i += 2;	// Skip the closing: */
+		}
+		else {
 			// Copy the character to the cleaned_output buffer
 			cleaned_output[j] = lines[i];
 			j++;
