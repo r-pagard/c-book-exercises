@@ -14,6 +14,8 @@ This repository is a collection of exercises from C programming books that I'm s
 ### **Chpaters**
 
 **Chapter 1**
+- [Variable & Arithmetic Expressions](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/variable-arithmetic-expressions)
+- [For Loop](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/for-loop)
 - [File Copying](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/file-copying)
 - [Counting](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/counting)
 - [Arrays](https://github.com/r-pagard/c-book-exercises/tree/main/chapter-1/array)
